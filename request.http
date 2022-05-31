@@ -1,0 +1,21 @@
+
+###GET
+
+GET http://localhost:3000/users/all
+
+
+###POST
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+  "name": "test 6",
+  "email": "test 6",
+  "password": "test 6"
+}
+
+### GET by id
+GET http://localhost:3000/users/6178d2bb-22e7-429d-babc-f0001015e255
+
+### delete by id
+DELETE http://localhost:3000/users/d3fbbe76-de41-4b64-b936-820bb715249d
