@@ -2,8 +2,6 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
@@ -30,11 +28,10 @@ Crud entitity user with NestJS and postgresql database, using typeorm.
 <img src="https://github.com/devicons/devicon/blob/master/icons/npm/npm-original-wordmark.svg" title="NPM" **alt="NPM" width="40" height="40"/>
 </div>
 
-
 ## Installation
 
 ```bash
-$ yarn
+yarn
 ```
 
 ## Running the app
@@ -92,4 +89,20 @@ PUT http:localhost:3000/users/:id
 
 # delete user
 DELETE http:localhost:3000/users/:id
+```
+
+## Connect the container
+
+```bash
+# CONECTAR AL CONTAINER
+docker exec -it <CONTAINER> bash
+
+# INICIAR SESION EN LA BASE DE DATOS
+psql -U postgres
+
+# CREAR LA BASE DE DATOS
+CREATE DATABASE mytest;
+
+# VERIFICAR QUE LA BD ESTE CREADA, LISTANDO LAS BASES EXISTENTES
+\list
 ```
